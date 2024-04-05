@@ -19,6 +19,9 @@ First install [CheckStyle-IDEA](https://plugins.jetbrains.com/plugin/1065-checks
 
 Then download the xml file locally to a temporary location and go to Settings -> Editor -> Code Style -> Java -> Import Scheme -> Checkstyle configuration
 
+Additionally, to enable real-time feedback in the IDE, go to Settings -> Tools -> Checkstyle. Then add a new configuration via URL of the raw xml config file.
+See [checkstyle-idea configuration files](https://github.com/jshiell/checkstyle-idea?tab=readme-ov-file#configuration-files) documentation for more details.
+
 #### Maven
 
 With maven, one can simply provide the url to the raw file in the [checkstyle maven plugin config](https://maven.apache.org/plugins/maven-checkstyle-plugin/examples/custom-checker-config.html).
