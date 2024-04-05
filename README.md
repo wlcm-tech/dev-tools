@@ -2,6 +2,12 @@
 
 Common build configs and tools used in WlcmTech.
 
+## [.editorconfig](.editorconfig)
+
+An [EditorConfig](https://editorconfig.org/) config file for our tech-stack. This config helps to maintain the consistency of the codestyle across our codebase while having out-of-box support for most popular IDEs like IntelliJ, VSCode, VIM, etc and requires almost no setup on the client-side.
+
+Apart from default editorconfig properties this file also contains IDE-specific configs, which simplify usage of the configuration with a given IDE, like IntelliJ.
+
 ## [wlcmtech_checks.xml](wlcmtech_checks.xml)
 
 A custom [checkstyle] configuration file based on default [google_checks.xml](https://github.com/checkstyle/checkstyle/blob/master/src/main/resources/google_checks.xml) config with a few modifications of our own that make our eyes hurt less when we look at the code. Namely we've modified the following modules' properties:
@@ -11,7 +17,7 @@ A custom [checkstyle] configuration file based on default [google_checks.xml](ht
 
 ### Usage
 
-#### IntelliJ 
+#### IntelliJ
 
 In IntelliJ this can be used to set the code style for Java which will be adjusted according to the rules defined in the xml config.
 
