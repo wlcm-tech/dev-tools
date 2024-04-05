@@ -10,10 +10,9 @@ Apart from default editorconfig properties this file also contains IDE-specific 
 
 ## [wlcmtech_checks.xml](wlcmtech_checks.xml)
 
-A custom [checkstyle] configuration file based on default [google_checks.xml](https://github.com/checkstyle/checkstyle/blob/master/src/main/resources/google_checks.xml) config with a few modifications of our own that make our eyes hurt less when we look at the code. Namely we've modified the following modules' properties:
+A custom [checkstyle] configuration file based on default [google_checks.xml](https://github.com/checkstyle/checkstyle/blob/master/src/main/resources/google_checks.xml) config with a few modifications of our own that make our eyes hurt less when we look at the code.
 
-- LineLength -> max -> 120 (default: 100)
-- Indentation -> basicOffset -> 4 (default: 2)
+All the custom modifications are specified at the top of our config file.
 
 ### Usage
 

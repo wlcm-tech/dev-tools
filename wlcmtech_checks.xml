@@ -18,8 +18,14 @@
     Original source: https://raw.githubusercontent.com/checkstyle/checkstyle/master/src/main/resources/google_checks.xml
 
     WlcmTech Modifications:
-      LineLength -> max -> 120
-      Indentation -> basicOffset -> 4
+      LineLength
+        max: 120 (default: 100)
+      Indentation
+        basicOffset: 4 (default: 2)
+      EmptyLineSeparator
+        allowMultipleEmptyLines: "false" (default: null)
+        allowMultipleEmptyLinesInsideClassMembers: "false" (default: null)
+
  -->
 
 <module name="Checker">
@@ -151,6 +157,8 @@
                     STATIC_INIT, INSTANCE_INIT, METHOD_DEF, CTOR_DEF, VARIABLE_DEF, RECORD_DEF,
                     COMPACT_CTOR_DEF"/>
       <property name="allowNoEmptyLineBetweenFields" value="true"/>
+      <property name="allowMultipleEmptyLines" value="false"/>
+      <property name="allowMultipleEmptyLinesInsideClassMembers" value="false"/>
     </module>
     <module name="SeparatorWrap">
       <property name="id" value="SeparatorWrapDot"/>
