@@ -4,9 +4,16 @@ Common build configs and tools used in WlcmTech.
 
 ## [.editorconfig](.editorconfig)
 
-An [EditorConfig](https://editorconfig.org/) config file for our tech-stack. This config helps to maintain the consistency of the codestyle across our codebase while having out-of-box support for most popular IDEs like IntelliJ, VSCode, VIM, etc and requires almost no setup on the client-side.
+An [EditorConfig](https://editorconfig.org/) config file for our tech-stack. This config helps to maintain the consistency of the code-style across our codebase while having out-of-box support for most popular IDEs like IntelliJ, VSCode, VIM, etc., and requires almost no setup on the client-side.
 
 Apart from default editorconfig properties this file also contains IDE-specific configs, which simplify usage of the configuration with a given IDE, like IntelliJ.
+
+### Usage
+
+Simply copy the file to the root of the project. The [supported IDE](https://editorconfig.org/#pre-installed) should pick it up and start using the configuration automatically.
+
+> [!NOTE]
+> Might need to check that you have the editorconfig plugin enabled in your IDE.
 
 ## [wlcmtech_checks.xml](wlcmtech_checks.xml)
 
