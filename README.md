@@ -2,7 +2,7 @@
 
 Common build configs and tools used in WlcmTech.
 
-## [.editorconfig](.editorconfig)
+## [config/.editorconfig](config/.editorconfig)
 
 An [EditorConfig](https://editorconfig.org/) config file for our tech-stack. This config helps to maintain the consistency of the code-style across our codebase while having out-of-box support for most popular IDEs like IntelliJ, VSCode, VIM, etc., and requires almost no setup on the client-side.
 
@@ -15,7 +15,7 @@ Simply copy the file to the root of the project. The [supported IDE](https://edi
 > [!NOTE]
 > Might need to check that you have the editorconfig plugin enabled in your IDE.
 
-## [wlcmtech_checks.xml](wlcmtech_checks.xml)
+## [config/wlcmtech_checks.xml](config/wlcmtech_checks.xml)
 
 A custom [checkstyle] configuration file based on default [google_checks.xml](https://github.com/checkstyle/checkstyle/blob/master/src/main/resources/google_checks.xml) config with a few modifications of our own that make our eyes hurt less when we look at the code.
 
