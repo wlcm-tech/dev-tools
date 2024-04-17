@@ -14,10 +14,14 @@ target/
 .sts4-cache
 
 ### IntelliJ IDEA ###
-.idea
+.idea/**
 *.iws
 *.iml
 *.ipr
+# exclude some common plugins configs
+!.idea/checkstyle-idea.xml
+!.idea/ktlint-plugin.xml
+!.idea/palantir-java-format.xml
 
 ### NetBeans ###
 /nbproject/private/

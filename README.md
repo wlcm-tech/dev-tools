@@ -43,3 +43,20 @@ With maven, one can simply provide the url to the raw file in the [checkstyle ma
 > Instead, set the configuration for the plugin under `project.build.plugins` for the checkstyle plugin, and then the custom config will be used.
 
 
+
+
+## [config/github/rulesets](config/github/rulesets/)
+
+Ruleset exports for repositories. Enforces some rules that we want to have in all repos for default (main) branch, tags, etc.
+
+Includes the following rulesets:
+
+- [default-branch.json](config/github/rulesets/default-branch.json) - rules for the default (main) branch
+- [release-tag.json](config/github/rulesets/release-tag.json) - rules for "release" tags
+
+### Usage
+
+- Download the file locally
+- Open repo Settings -> Rules -> Rulesets
+- New ruleset -> Import ruleset
+- Review and save changes
