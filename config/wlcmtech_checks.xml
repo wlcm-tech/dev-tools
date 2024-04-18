@@ -58,7 +58,19 @@
     <property name="checks" value="JavadocMethod"/>
     <property name="files"
               value=".*[\\/]src[\\/](test|it|xdocs-examples)[\\/].*(?&lt;!Support)\.java"/>
- </module>
+  </module>
+  <module name="SuppressionSingleFilter">
+    <property name="checks" value="JavadocType"/>
+    <property name="files" value=".*[\\/]src[\\/](test|it|xdocs-examples)[\\/]"/>
+  </module>
+  <module name="SuppressionSingleFilter">
+    <property name="checks" value="MissingJavadocMethod"/>
+    <property name="files" value=".*[\\/]src[\\/](test|it|xdocs-examples)[\\/]"/>
+  </module>
+  <module name="SuppressionSingleFilter">
+    <property name="checks" value="MissingJavadocType"/>
+    <property name="files" value=".*[\\/]src[\\/](test|it|xdocs-examples)[\\/]"/>
+  </module>
 
   <!-- Checks for whitespace                               -->
   <!-- See http://checkstyle.org/checks/whitespace/index.html -->
