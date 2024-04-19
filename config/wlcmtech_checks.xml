@@ -19,9 +19,14 @@
 
     WlcmTech Modifications:
       LineLength
+        severity: error (default: null -> global severity: warning)
         max: 120 (default: 100)
       Indentation
         basicOffset: 4 (default: 2)
+      MissingJavadocMethod
+        severity: error (default: null -> global severity: warning)
+      MissingJavadocType
+        severity: error (default: null -> global severity: warning)
       EmptyLineSeparator
         allowMultipleEmptyLines: "false" (default: null)
         allowMultipleEmptyLinesInsideClassMembers: "false" (default: null)
@@ -79,6 +84,7 @@
   </module>
 
   <module name="LineLength">
+    <property name="severity" value="error"/>
     <property name="fileExtensions" value="java"/>
     <property name="max" value="120"/>
     <property name="ignorePattern" value="^package.*|^import.*|a href|href|http://|https://|ftp://"/>
